@@ -8,12 +8,10 @@ int main(int argc, char *argv[])
   printf("input a number: ");
   scanf("%d", &input);
   
-  if (input > 0)
-      printf("This is positive\n");
-  else if (input < 0)
-      printf("This is negative\n");
-  else
-      printf("This is 0\n");
+  if (input < 0)
+      input = -input;
+      
+  printf("Absolute value is %d\n", input);
   
   system("PAUSE");	
   return 0;
