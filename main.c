@@ -10,10 +10,10 @@ int main(int argc, char *argv[])
   
   if (input > 0)
       printf("This is positive\n");
-  else if (input == 0)
-      printf("This is 0\n");
-  else
+  else if (input < 0)
       printf("This is negative\n");
+  else
+      printf("This is 0\n");
   
   system("PAUSE");	
   return 0;
